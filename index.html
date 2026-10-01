@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rudra Tavare Advertising | Creative Advertising & Graphic Design</title>
+<meta name="description" content="Rudra Tavare Advertising creates professional graphic designs, advertising creatives, social media visuals and digital creative solutions for businesses and brands.">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&family=Mukta:wght@400;500;600&family=Yatra+One&family=Amita:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B0B0B;--paper:#fff;--blue:#1F4BFF;--mute:#8a8a8a;--line:rgba(255,255,255,.12);--h:'Anton',Impact,'Arial Narrow',sans-serif;--b:'Inter',system-ui,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--ink);color:var(--paper);font-family:var(--b);line-height:1.5;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.w{width:min(1240px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--h);font-weight:400;text-transform:uppercase;line-height:.95;letter-spacing:.01em}
+h2{font-size:clamp(2.6rem,7vw,6rem)}
+.tag{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--blue);font-weight:600;display:block;margin-bottom:18px}
+section{padding:clamp(70px,11vw,140px) 0;position:relative}
+.light{background:var(--paper);color:var(--ink)}
+.light .mute{color:#555}
+.mute{color:var(--mute)}
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 28px;border:1px solid var(--paper);font-weight:600;font-size:.92rem;cursor:pointer;background:transparent;color:inherit;font-family:inherit;transition:background .3s,color .3s,border-color .3s,transform .25s;position:relative}
+.btn.p{background:var(--blue);border-color:var(--blue);color:#fff}
+.btn.p:hover{background:#fff;color:var(--ink);border-color:#fff}
+.btn.g:hover{background:#fff;color:var(--ink)}
+.light .btn.g{border-color:var(--ink)}.light .btn.g:hover{background:var(--ink);color:#fff}
+.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+/* nav */
+nav{position:fixed;inset:0 0 auto 0;z-index:50;padding:calc(env(safe-area-inset-top,0px) + 18px) 0 18px;transition:background .4s,backdrop-filter .4s,padding .4s}
+nav.s{background:rgba(11,11,11,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding-top:calc(env(safe-area-inset-top,0px) + 10px);padding-bottom:10px;border-bottom:1px solid var(--line)}
+nav .w{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-family:var(--h);font-size:1.15rem;line-height:1;letter-spacing:.04em}
+.logo small{display:block;color:var(--blue);font-size:.95rem}
+.links{display:flex;gap:34px;font-size:.9rem;font-weight:500}
+.links a{position:relative;padding:4px 0}
+.links a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.links a:hover::after{transform:scaleX(1)}
+.nav-cta{padding:12px 20px;font-size:.85rem}
+.burger{display:none;width:44px;height:44px;background:none;border:0;cursor:pointer;position:relative;z-index:60}
+.burger i{position:absolute;left:10px;right:10px;height:2px;background:#fff;transition:transform .4s,opacity .3s,top .4s}
+.burger i:nth-child(1){top:16px}.burger i:nth-child(2){top:26px}
+.burger.o i:nth-child(1){top:21px;transform:rotate(45deg)}.burger.o i:nth-child(2){top:21px;transform:rotate(-45deg)}
+.menu{position:fixed;inset:0;background:var(--ink);z-index:55;display:flex;flex-direction:column;justify-content:center;padding:30px;gap:6px;clip-path:circle(0 at calc(100% - 40px) 40px);transition:clip-path .6s cubic-bezier(.7,0,.2,1);visibility:hidden}
+.menu.o{clip-path:circle(150% at calc(100% - 40px) 40px);visibility:visible}
+.menu a{font-family:var(--h);font-size:3.2rem;text-transform:uppercase;line-height:1.15}
+.menu a:hover{color:var(--blue)}
+/* hero */
+.hero{min-height:100svh;display:flex;align-items:center;padding:130px 0 70px;overflow:hidden}
+.hero::before{content:"";position:absolute;width:60vw;height:60vw;right:-15vw;top:-10vw;background:radial-gradient(circle,rgba(31,75,255,.28),transparent 65%);pointer-events:none}
+.hero .w{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;position:relative}
+.hero h1{font-size:clamp(3.3rem,9vw,8.2rem)}
+.hero h1 span{display:block;overflow:hidden}
+.hero h1 span b{display:block;font-weight:400;transform:translateY(105%);animation:up 1s cubic-bezier(.2,.8,.2,1) forwards}
+.hero h1 span:nth-child(2) b{animation-delay:.12s}.hero h1 span:nth-child(3) b{animation-delay:.24s}
+.hero h1 em{font-style:normal;color:var(--blue)}
+@keyframes up{to{transform:none}}
+.hero p.lead{max-width:460px;margin:28px 0 34px;color:#bdbdbd;font-size:1.05rem;opacity:0;animation:fade 1s .6s forwards}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;opacity:0;animation:fade 1s .8s forwards}
+@keyframes fade{to{opacity:1}}
+.label{display:inline-flex;align-items:center;gap:10px;font-size:.7rem;letter-spacing:.22em;font-weight:600;border:1px solid var(--line);padding:9px 16px;margin-bottom:26px;backdrop-filter:blur(8px);background:rgba(255,255,255,.04)}
+.label::before{content:"";width:7px;height:7px;background:var(--blue);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.3}}
+.stage{position:relative;height:min(600px,78vw);opacity:0;animation:fade 1.2s .5s forwards}
+.stage .c{position:absolute;will-change:transform;transition:transform .2s linear}
+/* poster art */
+.p1,.p2,.p3,.p4,.p5,.p6,.p7{position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:6%;font-family:var(--h);text-transform:uppercase;line-height:.92;box-shadow:0 30px 60px -20px rgba(0,0,0,.7);width:100%;height:100%}
+.p1{background:var(--blue);color:#fff}.p1 big{font-size:clamp(2.2rem,5vw,4.4rem);display:block}
+.p1::after{content:"";position:absolute;right:-20%;bottom:-20%;width:70%;aspect-ratio:1;border:2px solid rgba(255,255,255,.5);border-radius:50%}
+.p2{background:#f4efe6;color:#0B0B0B}.p2 big{font-size:clamp(3rem,7vw,6rem);display:block;color:var(--blue)}
+.p3{background:#111;color:#fff;border:1px solid var(--line)}.p3 big{font-size:clamp(2rem,4.5vw,3.8rem);display:block;-webkit-text-stroke:1px #fff;color:transparent}
+.p3::after{content:"";position:absolute;left:0;right:0;bottom:0;height:38%;background:repeating-linear-gradient(90deg,var(--blue) 0 10px,transparent 10px 22px);opacity:.9}
+.p4{background:linear-gradient(160deg,#ff7a1a,#ffb703);color:#0B0B0B}.p4 big{font-size:clamp(2.2rem,5vw,4.2rem);display:block}
+.p4::after{content:"";position:absolute;right:8%;top:8%;width:38%;aspect-ratio:1;border-radius:50%;background:#0B0B0B;box-shadow:0 0 0 12px rgba(11,11,11,.15),0 0 0 26px rgba(11,11,11,.08)}
+.p5{background:#fff;color:#0B0B0B}.p5 big{font-size:clamp(2.6rem,6vw,5rem);display:block}
+.p5::after{content:"";position:absolute;right:0;top:0;width:34%;height:100%;background:var(--blue);clip-path:polygon(40% 0,100% 0,100% 100%,0 100%)}
+.p6{background:#161616;color:#fff}.p6 big{font-size:clamp(2.2rem,5vw,4rem);display:block}
+.p6::before{content:"PSD";position:absolute;right:-4%;top:-6%;font-size:14rem;color:rgba(31,75,255,.35);line-height:1}
+.p7{background:#e9edff;color:#0B0B0B}.p7 big{font-size:clamp(2.2rem,5vw,4rem);display:block;color:var(--blue)}
+.pt{font-family:var(--b);font-size:.68rem;font-weight:600;letter-spacing:.2em}
+.h1{width:52%;height:70%;left:0;top:8%;transform:rotate(-5deg)}.h2{width:46%;height:52%;right:0;top:0;transform:rotate(4deg)}.h3{width:48%;height:44%;right:6%;bottom:2%;transform:rotate(-3deg)}.h4{width:30%;height:26%;left:8%;bottom:0;transform:rotate(6deg)}
+.stage .c:hover{z-index:5}
+/* marquee */
+.mq{background:var(--blue);color:#fff;overflow:hidden;padding:20px 0;transform:rotate(-1deg);margin:-10px -10px 0;position:relative;z-index:2}
+.mq div{display:flex;width:max-content;animation:mq 30s linear infinite}
+.mq span{font-family:var(--h);font-size:clamp(1.4rem,3vw,2.2rem);white-space:nowrap;padding:0 24px;text-transform:uppercase}
+.mq span::after{content:"•";margin-left:48px;opacity:.6}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* about */
+.ab{display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:end}
+.ab p{font-size:1.15rem;max-width:520px}
+.st{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:70px;border-top:1px solid #0002}
+.st div{padding:28px 20px 0 0;border-right:1px solid #0002;padding-left:20px}
+.st div:first-child{padding-left:0}.st div:last-child{border:0}
+.st b{font-family:var(--h);font-weight:400;font-size:clamp(1.5rem,3.4vw,2.8rem);text-transform:uppercase;display:block;line-height:1}
+.st small{color:#666;font-size:.85rem}
+/* services */
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:60px}
+.sv{border:1px solid var(--line);padding:30px;min-height:260px;display:flex;flex-direction:column;justify-content:space-between;background:#101010;position:relative;overflow:hidden;transition:border-color .4s,transform .4s;grid-column:span 2}
+.sv:nth-child(1){grid-column:span 3}.sv:nth-child(2){grid-column:span 3}.sv:nth-child(6){grid-column:span 6;min-height:200px}
+.sv::before{content:"";position:absolute;inset:auto 0 0 0;height:0;background:var(--blue);transition:height .5s cubic-bezier(.2,.8,.2,1);z-index:0}
+.sv:hover::before{height:100%}.sv:hover{transform:translateY(-4px);border-color:var(--blue)}
+.sv>*{position:relative;z-index:1}
+.sv .n{font-family:var(--h);font-size:1rem;color:var(--blue);transition:color .4s}
+.sv:hover .n,.sv:hover p{color:#fff}
+.sv svg{width:34px;height:34px;stroke:#fff;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin:18px 0 auto;transition:transform .5s}
+.sv:hover svg{transform:rotate(-12deg) scale(1.15)}
+.sv h3{font-size:1.9rem;margin:24px 0 8px}
+.sv p{color:var(--mute);font-size:.92rem;max-width:420px;transition:color .4s}
+/* work */
+.wh{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap}
+.pf{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:clamp(150px,19vw,250px);gap:14px;margin-top:56px}
+.it{position:relative;overflow:hidden;cursor:pointer;background:#111}
+.it .p1,.it .p2,.it .p3,.it .p4,.it .p5,.it .p6,.it .p7{box-shadow:none;transition:transform .9s cubic-bezier(.2,.8,.2,1)}
+.it:hover>div:first-child{transform:scale(1.07)}
+.ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(11,11,11,.94),rgba(11,11,11,.25));opacity:0;transition:opacity .45s;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;color:#fff}
+.ov *{transform:translateY(14px);transition:transform .5s}
+.it:hover .ov,.it:focus-within .ov{opacity:1}.it:hover .ov *,.it:focus-within .ov *{transform:none}
+.ov small{font-size:.68rem;letter-spacing:.2em;color:#7d9bff;font-weight:600}
+.ov h3{font-size:1.7rem;margin:6px 0 10px}
+.ov a{font-size:.85rem;font-weight:600}
+.i1{grid-column:span 5;grid-row:span 2}.i2{grid-column:span 4;grid-row:span 1}.i3{grid-column:span 3;grid-row:span 2}.i4{grid-column:span 4}.i5{grid-column:span 5}.i6{grid-column:span 4;grid-row:span 1}.i7{grid-column:span 3}
+.note{margin-top:22px;font-size:.78rem;color:var(--mute)}
+/* showcase */
+.sh{background:#fff;color:var(--ink);overflow:hidden}
+.sh h2{margin-bottom:60px}
+.rail{display:flex;gap:0;width:max-content;animation:mq 45s linear infinite;padding:30px 0 50px}
+.sh:hover .rail{animation-play-state:paused}
+.rail>div{width:clamp(200px,24vw,300px);aspect-ratio:3/4;margin-right:-30px;transition:transform .5s cubic-bezier(.2,.8,.2,1);flex:none}
+.rail>div:nth-child(odd){transform:rotate(-4deg) translateY(12px)}.rail>div:nth-child(even){transform:rotate(3deg) translateY(-14px)}
+.rail>div:hover{transform:rotate(0) scale(1.08) translateY(-8px);z-index:9}
+/* process */
+.pr{display:grid;grid-template-columns:repeat(4,1fr);margin-top:70px;border-top:1px solid var(--line)}
+.pr div{padding:34px 26px 10px 0;position:relative}
+.pr div::before{content:"";position:absolute;top:-1px;left:0;height:2px;width:0;background:var(--blue);transition:width .8s}
+.pr.in div::before{width:100%}.pr div:nth-child(2)::before{transition-delay:.2s}.pr div:nth-child(3)::before{transition-delay:.4s}.pr div:nth-child(4)::before{transition-delay:.6s}
+.pr b{font-family:var(--h);font-weight:400;font-size:4.5rem;color:transparent;-webkit-text-stroke:1px #555;line-height:1}
+.pr h3{font-size:1.7rem;margin:14px 0 8px}.pr p{color:var(--mute);font-size:.92rem;max-width:230px}
+/* why */
+.why{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.why h2{font-size:clamp(2.6rem,6.5vw,5.6rem)}
+.why .r h2{color:var(--blue)}
+.why ul{list-style:none;margin-top:34px;display:grid;gap:0}
+.why li{padding:14px 0;border-bottom:1px solid #0002;display:flex;gap:14px;font-weight:500}
+.why li::before{content:"→";color:var(--blue)}
+/* statement */
+.stm{text-align:center;padding:clamp(80px,12vw,150px) 0}
+.stm h2{max-width:1000px;margin:0 auto;font-size:clamp(2.4rem,6.5vw,5.4rem)}
+.stm h2 em{font-style:normal;-webkit-text-stroke:1px #fff;color:transparent}
+/* cta */
+.cta-s{background:var(--blue);text-align:center;overflow:hidden}
+.cta-s h2{font-size:clamp(3rem,10vw,9rem)}
+.cta-s p{margin:26px auto 40px;font-size:1.1rem;max-width:480px}
+.cta-s .btn{border-color:#fff}.cta-s .btn.wh2{background:#fff;color:var(--ink)}.cta-s .btn.wh2:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.cta-s .btn.g:hover{background:var(--ink);border-color:var(--ink);color:#fff}
+.cta-s .row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+/* contact */
+.ct{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px}
+.ci{margin-top:40px;display:grid;gap:22px}
+.ci small{display:block;color:var(--mute);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase}
+.ci a,.ci b{font-size:1.2rem;font-weight:500}.ci a:hover{color:var(--blue)}
+.wa{margin-top:36px;border:1px solid var(--line);padding:22px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+form{display:grid;gap:22px}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+label{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);display:grid;gap:8px}
+input,select,textarea{background:transparent;border:0;border-bottom:1px solid #444;color:#fff;padding:10px 0;font:inherit;font-size:1rem;letter-spacing:0;text-transform:none;border-radius:0;transition:border-color .3s}
+input:focus,select:focus,textarea:focus{border-color:var(--blue);outline:0}
+select option{background:#111}
+textarea{resize:vertical;min-height:90px}
+/* footer */
+footer{border-top:1px solid var(--line);padding:70px 0 34px}
+.ft{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.ft .big{font-family:var(--h);font-size:clamp(1.8rem,4vw,3.2rem);line-height:1}
+.ft p{color:var(--mute);margin-top:12px;font-size:.9rem}
+.fl{display:flex;gap:28px;flex-wrap:wrap;font-size:.9rem}.fl a:hover{color:var(--blue)}
+.cp{margin-top:50px;padding-top:24px;border-top:1px solid var(--line);color:var(--mute);font-size:.8rem}
+/* reveal */
+.rv{opacity:0;transform:translateY(40px);transition:opacity .9s,transform .9s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.lg{display:inline-flex;border:1px solid var(--line);background:rgba(255,255,255,.04);cursor:pointer;font:600 .78rem var(--b);color:#fff;padding:3px}
+.lg span{padding:7px 11px;transition:background .3s}.lg span.on{background:var(--blue)}
+.menu .lg{align-self:flex-start;margin-top:24px}
+html[lang=mr]{--h:'Yatra One','Amita','Noto Serif Devanagari',serif}
+html[lang=mr] body{font-family:'Mukta',var(--b)}
+html[lang=mr] :is(em,.tag){font-family:'Amita','Yatra One',serif;font-weight:700}
+html[lang=mr] .tag{letter-spacing:.06em;font-size:.95rem;text-transform:none}
+html[lang=mr] .stm h2 em{-webkit-text-stroke:0;color:var(--blue)}
+html[lang=mr] :is(h1,h2,h3,.mq span,.st b,.menu a){font-weight:400;line-height:1.22;letter-spacing:0}
+html[lang=mr] :is(.logo,.ft .big,.p1,.p2,.p3,.p4,.p5,.p6,.p7,.pr b,.sv .n){font-family:'Anton',Impact,sans-serif;font-weight:400}
+html[lang=mr] .hero h1{font-size:clamp(2.5rem,6.6vw,5.8rem)}
+html[lang=mr] h2{font-size:clamp(2.2rem,5.6vw,4.6rem)}
+html[lang=mr] .cta-s h2{font-size:clamp(2.6rem,7.5vw,6.4rem)}
+html[lang=mr] :is(.why h2,.stm h2){font-size:clamp(2.2rem,5.4vw,4.4rem)}
+html[lang=mr] .hero h1 span{padding:.05em 0}
+@media(max-width:960px){
+.links,.nav-cta{display:none}.burger{display:block}
+.hero .w,.ab,.why,.ct{grid-template-columns:1fr}
+.stage{height:96vw;max-height:520px}
+.bento .sv,.sv:nth-child(1),.sv:nth-child(2){grid-column:span 6;min-height:210px}
+.pr{grid-template-columns:1fr 1fr}
+.pf{grid-template-columns:repeat(6,1fr)}
+.i1{grid-column:span 6;grid-row:span 2}.i2,.i4,.i6{grid-column:span 3}.i3{grid-column:span 3;grid-row:span 2}.i5{grid-column:span 6}.i7{grid-column:span 3}
+.ov{opacity:1;background:linear-gradient(to top,rgba(11,11,11,.85),transparent 55%)}.ov *{transform:none}
+.ov h3{font-size:1.2rem}
+}
+@media(max-width:560px){
+.w{width:calc(100% - 32px)}
+.hero{padding-top:110px}.hero .btn{width:100%;justify-content:space-between}
+.st{grid-template-columns:1fr}.st div{border:0;border-bottom:1px solid #0002;padding:18px 0}
+.pr{grid-template-columns:1fr}.pr div{padding-bottom:26px;border-bottom:1px solid var(--line)}
+.f2{grid-template-columns:1fr}
+.pf{grid-auto-rows:44vw}.i2,.i4,.i6,.i7,.i3{grid-column:span 6;grid-row:span 1}.i1{grid-row:span 1}
+.cta-s .btn,.wa .btn{width:100%;justify-content:space-between}
+.menu a{font-size:2.6rem}
+}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;transition-duration:.01s!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-share" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></symbol>
+<symbol id="i-mega" viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 0 0 1 1h3l8 5V5L7 10H4a1 1 0 0 0-1 1z"/><path d="M19 9a4 4 0 0 1 0 6"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></symbol>
+<symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 19l7-7-4-4-7 7-1 5z"/><path d="M15 8l-1-3-9 2"/></symbol>
+<symbol id="i-file" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 13h6M9 17h6"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
+</defs></svg>
+
+<nav id="nav"><div class="w">
+<a href="#home" class="logo" aria-label="Rudra Tavare Advertising home">RUDRA TAVARE<small>ADVERTISING™</small></a>
+<div class="links"><a href="#home">Home</a><a href="#services">Services</a><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+<a href="#contact" class="btn p nav-cta mag">Let's Work Together →</a>
+<button class="lg" data-lg aria-label="Language / भाषा"><span data-l="en" class="on">EN</span><span data-l="mr">मराठी</span></button>
+<button class="burger" id="bg" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+</div></nav>
+<div class="menu" id="mn"><button class="lg" data-lg aria-label="Language / भाषा"><span data-l="en" class="on">EN</span><span data-l="mr">मराठी</span></button><a href="#home">Home</a><a href="#services">Services</a><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a><a href="https://wa.me/918180927961" style="font-size:1.1rem;font-family:var(--b);margin-top:20px;color:var(--blue)">WhatsApp Us →</a></div>
+
+<main>
+<header class="hero" id="home"><div class="w">
+<div>
+<span class="label">CREATIVE • DESIGN • ADVERTISING</span>
+<h1><span><b>We turn ideas</b></span><span><b>into <em>visual</em></b></span><span><b>impact.</b></span></h1>
+<p class="lead">Creative advertising, graphic design and digital visuals crafted to make brands stand out.</p>
+<div class="cta"><a href="#work" class="btn p mag">View Our Work →</a><a href="#contact" class="btn g mag">Start a Project →</a></div>
+</div>
+<div class="stage" aria-hidden="true">
+<div class="c h1" data-d="30"><div class="p1"><span class="pt">SOCIAL MEDIA</span><big>Grand<br>Opening</big><span class="pt">SAVE THE DATE</span></div></div>
+<div class="c h2" data-d="-20"><div class="p2"><span class="pt">FESTIVAL</span><big>Sale</big><span class="pt">UP TO 50% OFF</span></div></div>
+<div class="c h3" data-d="45"><div class="p3"><span class="pt">ADVERTISING</span><big>Be<br>Seen</big></div></div>
+<div class="c h4" data-d="-40"><div class="p4"><big>Aa</big></div></div>
+</div>
+</div></header>
+
+<div class="mq" aria-hidden="true"><div><span>Graphic Design</span><span>Social Media</span><span>Advertising</span><span>Branding</span><span>Creative Design</span><span>Digital Visuals</span><span>Graphic Design</span><span>Social Media</span><span>Advertising</span><span>Branding</span><span>Creative Design</span><span>Digital Visuals</span></div></div>
+
+<section class="light" id="about"><div class="w">
+<div class="ab">
+<div class="rv"><span class="tag">About</span><h2>Design that<br>gets noticed.</h2></div>
+<p class="rv mute">Rudra Tavare Advertising helps businesses, creators and brands communicate through powerful visual design. From social media creatives to promotional campaigns, every design is created with attention to detail, clarity and impact.</p>
+</div>
+<div class="st rv"><div><b>Creative First</b><small>Ideas before templates.</small></div><div><b>Detail Focused</b><small>Every pixel considered.</small></div><div><b>Business Driven</b><small>Design that supports goals.</small></div></div>
+</div></section>
+
+<section id="services"><div class="w">
+<div class="rv"><span class="tag">Services</span><h2>What we create</h2></div>
+<div class="bento">
+<article class="sv rv"><div><span class="n">01</span><svg><use href="#i-share"/></svg></div><div><h3>Social Media Design</h3><p>Instagram posts, reels covers, promotional creatives and campaign visuals.</p></div></article>
+<article class="sv rv"><div><span class="n">02</span><svg><use href="#i-mega"/></svg></div><div><h3>Advertising Creatives</h3><p>Eye-catching designs for promotions, offers and business campaigns.</p></div></article>
+<article class="sv rv"><div><span class="n">03</span><svg><use href="#i-spark"/></svg></div><div><h3>Festival Creatives</h3><p>Professional festival and occasion-based designs for businesses and brands.</p></div></article>
+<article class="sv rv"><div><span class="n">04</span><svg><use href="#i-pen"/></svg></div><div><h3>Branding & Visual Identity</h3><p>Consistent visual design that helps businesses look professional.</p></div></article>
+<article class="sv rv"><div><span class="n">05</span><svg><use href="#i-file"/></svg></div><div><h3>Promotional Design</h3><p>Posters, banners, announcements and promotional materials.</p></div></article>
+<article class="sv rv"><div><span class="n">06</span><svg><use href="#i-layers"/></svg></div><div><h3>PSD & Creative Resources</h3><p>Professionally designed editable PSD files and creative resources.</p></div></article>
+</div></div></section>
+
+<section id="work" style="padding-top:0"><div class="w">
+<div class="wh rv"><div><span class="tag">Portfolio</span><h2>Selected work</h2></div><p class="mute" style="max-width:300px;font-size:.9rem">Social media · Advertising · Festival creatives · Posters · Promotional design · PSD resources</p></div>
+<div class="pf">
+<a class="it i1 rv" href="#contact"><div class="p1"><span class="pt">SOCIAL MEDIA</span><big>Social<br>Media<br>Campaign</big><span class="pt">@RUDRATAVARE_ADVERTISING</span></div><div class="ov"><small>SOCIAL MEDIA</small><h3>Social Media Campaign</h3><span>View Project →</span></div></a>
+<a class="it i2 rv" href="#contact"><div class="p4"><span class="pt">FESTIVAL CREATIVES</span><big>Festival<br>Campaign</big></div><div class="ov"><small>FESTIVAL CREATIVES</small><h3>Festival Campaign</h3><span>View Project →</span></div></a>
+<a class="it i3 rv" href="#contact"><div class="p3"><span class="pt">POSTERS</span><big>Bold<br>Poster<br>Series</big></div><div class="ov"><small>POSTERS</small><h3>Poster Series</h3><span>View Project →</span></div></a>
+<a class="it i4 rv" href="#contact"><div class="p5"><span class="pt">ADVERTISING</span><big>Big<br>Offer</big></div><div class="ov"><small>ADVERTISING</small><h3>Promotional Creative</h3><span>View Project →</span></div></a>
+<a class="it i5 rv" href="#contact"><div class="p2"><span class="pt">PROMOTIONAL DESIGN</span><big>Brand<br>Awareness</big></div><div class="ov"><small>PROMOTIONAL DESIGN</small><h3>Brand Awareness Series</h3><span>View Project →</span></div></a>
+<a class="it i6 rv" href="#contact"><div class="p6"><span class="pt">PSD RESOURCES</span><big>Editable<br>PSD Pack</big></div><div class="ov"><small>PSD RESOURCES</small><h3>Editable PSD Templates</h3><span>View Project →</span></div></a>
+<a class="it i7 rv" href="#contact"><div class="p7"><span class="pt">SOCIAL MEDIA</span><big>Reel<br>Cover</big></div><div class="ov"><small>SOCIAL MEDIA</small><h3>Reel Covers</h3><span>View Project →</span></div></a>
+</div>
+<p class="note">Demo layouts. Final portfolio will use Rudra's real designs from Instagram.</p>
+</div></section>
+
+<section class="sh"><div class="w"><h2 class="rv">Your brand<br>deserves to<br>stand out.</h2></div>
+<div class="rail" aria-hidden="true">
+<div><div class="p1"><span class="pt">POST</span><big>New<br>Launch</big></div></div><div><div class="p4"><span class="pt">FESTIVAL</span><big>Happy<br>Festival</big></div></div><div><div class="p3"><big>Stand<br>Out</big></div></div><div><div class="p2"><span class="pt">OFFER</span><big>Sale</big></div></div><div><div class="p6"><big>Brand<br>Kit</big></div></div><div><div class="p5"><big>Hello</big></div></div>
+<div><div class="p1"><span class="pt">POST</span><big>New<br>Launch</big></div></div><div><div class="p4"><span class="pt">FESTIVAL</span><big>Happy<br>Festival</big></div></div><div><div class="p3"><big>Stand<br>Out</big></div></div><div><div class="p2"><span class="pt">OFFER</span><big>Sale</big></div></div><div><div class="p6"><big>Brand<br>Kit</big></div></div><div><div class="p5"><big>Hello</big></div></div>
+</div></section>
+
+<section id="process"><div class="w">
+<div class="rv"><span class="tag">Process</span><h2>How we work</h2></div>
+<div class="pr rv" id="pr">
+<div><b>01</b><h3>Discover</h3><p>Understand the business, audience and objective.</p></div>
+<div><b>02</b><h3>Create</h3><p>Develop the visual concept and design direction.</p></div>
+<div><b>03</b><h3>Refine</h3><p>Review, improve and finalize the creative.</p></div>
+<div><b>04</b><h3>Deliver</h3><p>Deliver polished, ready-to-use designs.</p></div>
+</div></div></section>
+
+<section class="light"><div class="w why">
+<div class="rv"><h2>Good design<br>isn't just<br>beautiful.</h2></div>
+<div class="r rv"><h2>It communicates.</h2>
+<ul><li>Captures attention</li><li>Communicates clearly</li><li>Builds trust</li><li>Makes businesses look professional</li><li>Supports marketing goals</li></ul></div>
+</div></section>
+
+<section class="stm"><div class="w rv"><span class="tag">Who it's for</span><h2 data-mr="उठून दिसू इच्छिणाऱ्या व्यवसायांसाठी <em>खास.</em>">Built for businesses that want to <em>stand out.</em></h2></div></section>
+
+<section class="cta-s"><div class="w rv">
+<h2>Ready to make<br>your brand<br>look better?</h2>
+<p>Let's create visuals that make people stop, notice and remember.</p>
+<div class="row"><a href="#contact" class="btn wh2 mag">Start a Project →</a><a href="https://wa.me/918180927961" target="_blank" rel="noopener" class="btn g mag">WhatsApp Us</a></div>
+</div></section>
+
+<section id="contact"><div class="w ct">
+<div class="rv"><span class="tag">Contact</span><h2 style="font-size:clamp(2.6rem,6vw,5rem)">Let's create<br>something great.</h2>
+<div class="ci"><div><small>Studio</small><b>Rudra Tavare Advertising™</b></div><div><small>Instagram</small><a href="https://instagram.com/rudratavare_advertising" target="_blank" rel="noopener">@rudratavare_advertising</a></div><div><small>Phone</small><a href="tel:+918180927961">8180927961</a></div></div>
+<div class="wa"><div><b>Prefer WhatsApp?</b></div><a href="https://wa.me/918180927961" target="_blank" rel="noopener" class="btn p">Chat directly with us →</a></div>
+</div>
+<form id="fm" class="rv">
+<div class="f2"><label>Name<input name="n" required autocomplete="name"></label><label>Business Name<input name="b" autocomplete="organization"></label></div>
+<div class="f2"><label>Phone / WhatsApp<input name="p" type="tel" required autocomplete="tel"></label>
+<label>Service Required<select name="s"><option>Social Media Design</option><option>Advertising Creatives</option><option>Festival Creatives</option><option>Branding & Visual Identity</option><option>Promotional Design</option><option>PSD & Creative Resources</option></select></label></div>
+<label>Message<textarea name="m"></textarea></label>
+<div><button class="btn p mag" type="submit">Send Enquiry →</button></div>
+</form>
+</div></section>
+</main>
+
+<footer><div class="w">
+<div class="ft"><div><div class="big">RUDRA TAVARE<br>ADVERTISING™</div><p>Creative Advertising • Graphic Design • Digital Visuals</p></div>
+<div class="fl"><a href="#home">Home</a><a href="#services">Services</a><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a><a href="https://instagram.com/rudratavare_advertising" target="_blank" rel="noopener">Instagram</a></div></div>
+<div class="cp">© 2026 Rudra Tavare Advertising™. All rights reserved.</div>
+</div></footer>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
+const nav=$('#nav');addEventListener('scroll',()=>nav.classList.toggle('s',scrollY>40),{passive:true});
+const bg=$('#bg'),mn=$('#mn');
+function tg(o){bg.classList.toggle('o',o);mn.classList.toggle('o',o);bg.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''}
+bg.onclick=()=>tg(!mn.classList.contains('o'));
+mn.querySelectorAll('a').forEach(a=>a.onclick=()=>tg(false));
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+$$('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%3)*.08+'s';io.observe(el)});
+io.observe($('#pr'));
+const cs=$$('.stage .c');
+if(matchMedia('(hover:hover)').matches){
+addEventListener('mousemove',e=>{const x=e.clientX/innerWidth-.5,y=e.clientY/innerHeight-.5;cs.forEach(c=>{const d=+c.dataset.d;c.style.translate=`${x*d}px ${y*d}px`})});
+$$('.mag').forEach(b=>{b.addEventListener('mousemove',e=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.2}px,${(e.clientY-r.top-r.height/2)*.3}px)`});b.addEventListener('mouseleave',()=>b.style.transform='')})}
+addEventListener('scroll',()=>{const y=Math.min(scrollY,800);cs.forEach((c,i)=>{c.style.marginTop=(-y*(.04+i*.03))+'px'})},{passive:true});
+$('#fm').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target);
+const t=`${encodeURIComponent(document.documentElement.lang=='mr'?'नमस्कार, मला चौकशी करायची आहे.':"Hi Rudra Tavare Advertising, I'd like to enquire.")}%0AName: ${encodeURIComponent(f.get('n'))}%0ABusiness: ${encodeURIComponent(f.get('b')||'-')}%0APhone: ${encodeURIComponent(f.get('p'))}%0AService: ${encodeURIComponent(f.get('s'))}%0AMessage: ${encodeURIComponent(f.get('m')||'-')}`;
+window.open('https://wa.me/918180927961?text='+t,'_blank','noopener')});
+
+const R={"Home":"मुख्यपृष्ठ","Services":"सेवा","Work":"आमचे काम","About":"आमच्याबद्दल","Contact":"संपर्क","Let's Work Together →":"चला एकत्र काम करूया →","WhatsApp Us →":"व्हॉट्सॲपवर संपर्क →","WhatsApp Us":"व्हॉट्सॲपवर संपर्क करा",
+"CREATIVE • DESIGN • ADVERTISING":"क्रिएटिव्ह • डिझाईन • जाहिरात","We turn ideas":"आम्ही तुमच्या कल्पनांना","into":"देतो","visual":"दृश्य","impact.":"प्रभाव.",
+"Creative advertising, graphic design and digital visuals crafted to make brands stand out.":"क्रिएटिव्ह जाहिरात, ग्राफिक डिझाईन आणि डिजिटल व्हिज्युअल्स — तुमचा ब्रँड उठून दिसण्यासाठी.",
+"View Our Work →":"आमचे काम पहा →","Start a Project →":"प्रोजेक्ट सुरू करा →","Graphic Design":"ग्राफिक डिझाईन","Social Media":"सोशल मीडिया","Advertising":"जाहिरात","Branding":"ब्रँडिंग","Creative Design":"क्रिएटिव्ह डिझाईन","Digital Visuals":"डिजिटल व्हिज्युअल्स",
+"Design that":"डिझाईन जे","gets noticed.":"लक्षात राहते.",
+"Rudra Tavare Advertising helps businesses, creators and brands communicate through powerful visual design. From social media creatives to promotional campaigns, every design is created with attention to detail, clarity and impact.":"Rudra Tavare Advertising व्यवसाय, क्रिएटर्स आणि ब्रँड्सना प्रभावी व्हिज्युअल डिझाईनद्वारे संवाद साधण्यास मदत करते. सोशल मीडिया क्रिएटिव्ह्सपासून प्रमोशनल कॅम्पेनपर्यंत, प्रत्येक डिझाईन बारकावे, स्पष्टता आणि प्रभाव लक्षात घेऊन बनवले जाते.",
+"Creative First":"आधी क्रिएटिव्ह","Ideas before templates.":"टेम्पलेटआधी कल्पना.","Detail Focused":"बारकाव्यांवर लक्ष","Every pixel considered.":"प्रत्येक पिक्सेलचा विचार.","Business Driven":"व्यवसायाभिमुख","Design that supports goals.":"ध्येयांना साथ देणारे डिझाईन.",
+"What we create":"आम्ही काय बनवतो","Social Media Design":"सोशल मीडिया डिझाईन","Instagram posts, reels covers, promotional creatives and campaign visuals.":"इन्स्टाग्राम पोस्ट, रील कव्हर, प्रमोशनल क्रिएटिव्ह्स आणि कॅम्पेन व्हिज्युअल्स.",
+"Advertising Creatives":"जाहिरात क्रिएटिव्ह्स","Eye-catching designs for promotions, offers and business campaigns.":"प्रमोशन, ऑफर्स आणि व्यवसाय कॅम्पेनसाठी लक्षवेधी डिझाईन.",
+"Festival Creatives":"सण-उत्सव क्रिएटिव्ह्स","Professional festival and occasion-based designs for businesses and brands.":"व्यवसाय आणि ब्रँड्ससाठी सण आणि प्रसंगानुसार व्यावसायिक डिझाईन.",
+"Branding & Visual Identity":"ब्रँडिंग आणि व्हिज्युअल आयडेंटिटी","Consistent visual design that helps businesses look professional.":"एकसंध व्हिज्युअल डिझाईन, ज्यामुळे तुमचा व्यवसाय व्यावसायिक दिसतो.",
+"Promotional Design":"प्रमोशनल डिझाईन","Posters, banners, announcements and promotional materials.":"पोस्टर्स, बॅनर्स, घोषणा आणि प्रमोशनल साहित्य.",
+"PSD & Creative Resources":"PSD आणि क्रिएटिव्ह रिसोर्सेस","Professionally designed editable PSD files and creative resources.":"व्यावसायिक पद्धतीने बनवलेल्या एडिटेबल PSD फाइल्स आणि क्रिएटिव्ह रिसोर्सेस.",
+"Portfolio":"पोर्टफोलिओ","Selected work":"निवडक काम","Social media · Advertising · Festival creatives · Posters · Promotional design · PSD resources":"सोशल मीडिया · जाहिरात · सण-उत्सव क्रिएटिव्ह्स · पोस्टर्स · प्रमोशनल डिझाईन · PSD रिसोर्सेस",
+"Social Media Campaign":"सोशल मीडिया कॅम्पेन","Festival Campaign":"सण-उत्सव कॅम्पेन","Posters":"पोस्टर्स","Poster Series":"पोस्टर मालिका","Promotional Creative":"प्रमोशनल क्रिएटिव्ह","Brand Awareness Series":"ब्रँड अवेअरनेस मालिका","PSD Resources":"PSD रिसोर्सेस","Editable PSD Templates":"एडिटेबल PSD टेम्पलेट्स","Reel Covers":"रील कव्हर्स","View Project →":"प्रोजेक्ट पहा →",
+"Demo layouts. Final portfolio will use Rudra's real designs from Instagram.":"हे डेमो लेआउट आहेत. अंतिम पोर्टफोलिओमध्ये रुद्र यांच्या इन्स्टाग्रामवरील खऱ्या डिझाईन्स वापरल्या जातील.",
+"Your brand":"तुमचा ब्रँड","deserves to":"उठून","stand out.":"दिसायलाच हवा.",
+"Process":"प्रक्रिया","How we work":"आम्ही कसे काम करतो","Discover":"जाणून घ्या","Create":"निर्मिती","Refine":"सुधारणा","Deliver":"डिलिव्हरी",
+"Understand the business, audience and objective.":"व्यवसाय, प्रेक्षक आणि उद्दिष्ट समजून घेणे.","Develop the visual concept and design direction.":"व्हिज्युअल संकल्पना आणि डिझाईनची दिशा ठरवणे.","Review, improve and finalize the creative.":"तपासणी, सुधारणा आणि क्रिएटिव्ह अंतिम करणे.","Deliver polished, ready-to-use designs.":"परिपूर्ण, वापरण्यास तयार डिझाईन्स देणे.",
+"Good design":"चांगले डिझाईन","isn't just":"म्हणजे फक्त","beautiful.":"सुंदर दिसणे नाही.","It communicates.":"ते संवाद साधते.","Captures attention":"लक्ष वेधून घेते","Communicates clearly":"स्पष्ट संवाद साधते","Builds trust":"विश्वास निर्माण करते","Makes businesses look professional":"व्यवसाय व्यावसायिक दिसतात","Supports marketing goals":"मार्केटिंग ध्येयांना साथ देते",
+"Who it's for":"कोणासाठी","Ready to make":"तयार आहात?","your brand":"तुमचा ब्रँड","look better?":"अधिक छान दिसवायला?","Let's create visuals that make people stop, notice and remember.":"चला असे व्हिज्युअल्स बनवूया जे लोकांना थांबवतात, लक्ष वेधतात आणि लक्षात राहतात.",
+"Let's create":"चला घडवूया","something great.":"काहीतरी भन्नाट.","Studio":"स्टुडिओ","Instagram":"इन्स्टाग्राम","Phone":"फोन","Prefer WhatsApp?":"व्हॉट्सॲप आवडते?","Chat directly with us →":"थेट चॅट करा →",
+"Name":"नाव","Business Name":"व्यवसायाचे नाव","Phone / WhatsApp":"फोन / व्हॉट्सॲप","Service Required":"आवश्यक सेवा","Message":"संदेश","Send Enquiry →":"चौकशी पाठवा →",
+"Creative Advertising • Graphic Design • Digital Visuals":"क्रिएटिव्ह ॲडव्हर्टायझिंग • ग्राफिक डिझाईन • डिजिटल व्हिज्युअल्स","© 2026 Rudra Tavare Advertising™. All rights reserved.":"© 2026 Rudra Tavare Advertising™. सर्व हक्क राखीव."};
+const M={};for(const k in R)M[k.toLowerCase()]=R[k];
+const tn=[],dm=[];
+const tw=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+for(let n;n=tw.nextNode();){const t=n.nodeValue.trim().toLowerCase();if(M[t]&&!n.parentElement.closest('script,style,[data-mr]'))tn.push([n,n.nodeValue]);}
+$$('[data-mr]').forEach(e=>dm.push([e,e.innerHTML,e.dataset.mr]));
+function setLang(l){document.documentElement.lang=l;
+tn.forEach(([n,o])=>{const t=o.trim();n.nodeValue=l=='mr'?o.replace(t,M[t.toLowerCase()]):o});
+dm.forEach(([e,o,m])=>e.innerHTML=l=='mr'?m:o);
+$$('[data-l]').forEach(x=>x.classList.toggle('on',x.dataset.l==l));
+try{localStorage.setItem('rta-lang',l)}catch(e){}}
+$$('[data-lg]').forEach(b=>b.onclick=()=>setLang(document.documentElement.lang=='mr'?'en':'mr'));
+try{if(localStorage.getItem('rta-lang')=='mr')setLang('mr')}catch(e){}
+</script>
+</body>
+</html>
